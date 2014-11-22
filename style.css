@@ -1,0 +1,18 @@
+.toplist {
+    list-style:none;
+    font-size:1.25em;
+}
+
+.sublist {
+    list-style:disc;
+    font-size: 0.8em;
+    font-style:italic;
+}
+
+body {
+    background-color:#B5B3AA;
+}
+
+#page-container {
+    background-color:#DFEDEB;
+}
