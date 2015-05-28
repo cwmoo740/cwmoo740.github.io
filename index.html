@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,138 +8,216 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-  </head>
-  <body>
-    <div class="container" id="page-container">
-        <div class="page-header">
-            <div class="row">
-                <div class="col-md-8" id="title-column">
-                    <h1 style="margin-top:0px"> Jeffrey Young</h1>
-                    <p> Master's student in computer science
-                    specializing in robotics and AI</p>
-                    <a href=https://drive.google.com/file/d/0B7zUl3psFjzTRk12TWhiZ3VUclk/view?usp=sharing>
-                        PDF version
-                    </a>
-                </div>
-                <div class="col-md-4" id="address-column">
-                    <address style="margin-top:5px">
-                        <a href="mailto:cwmoo740@gmail.com">cwmoo740@gmail.com</a><br/>
-                        <a href=http://cwmoo740.github.io>cwmoo740.github.io</a><br/>
-                        <!-- cwmoo740@gmail.com <br/>
-                        cwmoo.github.io <br/>
-                        <!-- uncomment for pdf printig -->
-                        408-250-6648 <br/>
-			3480 Murdoch Court, Palo Alto, CA
-                    </address>
-                </div>
-            </div> <!-- end row -->
-        
-        </div> <!-- end page-header -->
-        
-        <h2>Employment History</h2>
-        <ul class="toplist">
-            <li> Photonic Corp: August 2013 - May 2014
-                <ul class="sublist">
-                    <li>Analyzed performance of a novel computer architecture running DoD benchmarks </li>
-                    <li>Simulated effectiveness of different routing algorithms for SMP machine in C++ </li>
-                    <li>Evaluated performance benefits of including GPUs in novel architecture using CUDA C++ </li>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" id="top-header">
+        <div class="col-xs-4 left-col">
+            <p>
+                408-250-6648 <br/>
+                3480 Murdoch Court <br/>
+                Palo Alto, CA 94306
+            </p>
+        </div>
+        <div class="col-xs-4 center-col">
+            <p> Jeffrey Young </p>
+        </div>
+        <div class="col-xs-4 right-col">
+            <p>
+                <a href="mailto:cwmoo740@gmail.com">cwmoo740@gmail.com</a><br/>
+                <a href=http://cwmoo740.github.io>cwmoo740.github.io</a><br/>
+                <!--<a href=https://drive.google.com/file/d/0B7zUl3psFjzTRk12TWhiZ3VUclk/view?usp=sharing>
+                    PDF resume
+                </a>-->
+            </p>
+        </div>
+    </div>
+
+    <div id="employment-container">
+        <div class="row" id="employment-top-header">
+            <div class="col-xs-12 section-header">
+                EMPLOYMENT
+            </div>
+        </div>
+
+        <div class="row employment-header">
+            <div class="col-xs-4 left-col">
+                <span>Software Engineer</span>
+            </div>
+            <div class="col-xs-4 center-col">
+                <span>Brighterion, Inc.</span>
+            </div>
+            <div class="col-xs-4 right-col">
+                <span>February 2015 - present</span>
+            </div>
+        </div>
+
+        <div class="row employment-entry">
+            <div class="col-xs-12">
+                <ul class="detail-text">
+                    <li>Refactored core data parsing library, reducing memory usage and improving performance 20%</li>
+                    <li>Wrote and tested library for custom parsing of PMML format, an extension of XML</li>
+                    <li>Maintained, debugged, and modified a large C++ codebase as new features were added</li>
                 </ul>
-            </li>
-            <li> UC Berkeley Combustion Lab
-                <ul class="sublist">
-                    <li> Evaluated effect of microwaves on methane combustion at lean flammability limit </li>
-                    <li> Wrote image processing software in Matlab and ImageJ to automate extraction of combustion data from
-                    high speed camera footage</li>
+            </div>
+        </div>
+
+        <div class="row employment-header">
+
+            <div class="col-xs-4 left-col">
+                <span>Software Engineer</span>
+            </div>
+            <div class="col-xs-4 center-col">
+                <span>Photonic Corp.</span>
+            </div>
+            <div class="col-xs-4 right-col">
+                <span>August 2013 - May 2014</span>
+            </div>
+        </div>
+
+        <div class="row employment-entry">
+            <div class="col-xs-12">
+                <ul class="detail-text">
+                    <li>Compiled and tested DoD Coral benchmarks with architecture simulator</li>
+                    <li>Implemented and tested routing algorithms for SMP machine in C++</li>
+                    <li>Evaluated performance benefits of including GPUs in novel architecture using CUDA C++</li>
                 </ul>
-            </li>
-            <li> UC Berkeley Tennis Dynamics Lab 
-                <ul class="sublist">
-                    <li> Evaluated effect of variables such as string type, tension, and racquet material on impact spin generation</li>
-                    <li> Assisted in writing image processing software in Matlab to automate data collection </li>
-                </ul>
-            </li>
-        </ul>
-        <div class="row">
-            <div class="col-md-4">
-        <h2>Education</h2>
-        <ul class="toplist">
-            <li> Georgia Tech
-                <ul class="sublist">
-                    <li>MS in Computer Science</li>
-                    <li>August 2014 - June 2016 (expected)</li>
-                    <li>Specializing in AI and Robotics</li>
-                </ul>
-            </li>
-            <li>UC Berkeley
-                <ul class="sublist">
-                    <li>BS in Mechanical Engineering</li>
-                    <li>August 2009 - December 2012</li>
-                    <li>Drake Scholarship Recipient</li>
-                </ul>
-            </li>
-        </ul>
-        </div> <!-- end column -->
-            <div class="col-md-4">
-                <h2>Projects</h2>
-                <ul class="toplist">
-                	<li>GTthreads</li>
-                	<ul class="sublist">
-                		<li>POSIX-Compliant user-level threading library</li>
-                		<li>Emulates functionality of pthreads library</li>
-                	</ul>
-                    <li>OpenMP/MPI Barrier
-                        <ul class="sublist">
-                            <li>Custom barrier implementations for OpenMP/MPI in C</li>
-                            <li>Performance analysis with different architectures and usage patterns</li>
-                        </ul>
-                    </li>
-                    <li>Raven's Matrices
-                        <ul class="sublist">
-                            <li>Python program to solve Raven's Matrices</li>
-                            <li>Visual analogy problems used in IQ tests</li>
-                        </ul>
-                    </li>
-                    <li>UCB Bionic Knee
-                        <ul class="sublist">
-                            <li>Created a replacement knee joint for evaluation in UCB's DARPA-funded exoskeleton project</li>
-                            <li>Automated using an Arduino collecting data from IMU-3000 accel/gyro</li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            </div> <!-- end column -->
-            <div class="col-md-4">
-                <h2>Skills</h2>
-                <ul class="toplist">
-                    <li>Programming
-                        <ul class="sublist">
-                            <li>C/C++</li>
-                            <li>CUDA/OpenMP/MPI</li>
-                            <li>Python/Matlab</li>
-                            <li>LabView</li>
-                            <li>Android</li>
-                            <li>Arduino</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </li>
-                    <li>Other
-                        <ul class="sublist">
-                            <li>Mechanical Design - Solidworks/Inventor</li>
-                            <li>Stress and Thermal Analysis - Comsol</li>
-                            <li>Automotive Maintenance</li>
-                            <li>Computer Building and Case Modding</li>
-                        </ul>
+            </div>
+        </div>
+
+        <div class="row employment-header">
+
+            <div class="col-xs-4 left-col">
+                <span>Research Assistant</span>
+            </div>
+            <div class="col-xs-4 center-col">
+                <span>UC Berkeley</span>
+            </div>
+            <div class="col-xs-4 right-col">
+                <span>April 2012 - October 2012</span>
+            </div>
+        </div>
+
+        <div class="row employment-entry">
+            <div class="col-xs-12">
+                <ul class="detail-text">
+                    <li>Gathered data on effects of microwave radiation on methane combustion</li>
+                    <li>Wrote image processing software in Matlab and ImageJ to automate data extraction from high speed
+                        video footage
                     </li>
                 </ul>
-            </div> <!-- end column -->
-        </div> <!-- end row -->
-    </div> <!-- end page container -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
-          
-  </body>
+            </div>
+        </div>
+    </div>
+
+    <div id="education-container">
+
+        <div class="row" id="education-top-header">
+            <div class="col-xs-12 section-header">
+                EDUCATION
+            </div>
+        </div>
+
+        <div class="row education-header">
+            <div class="col-xs-4 left-col">
+                <span>MS in Computer Science</span>
+            </div>
+            <div class="col-xs-4 center-col">
+                <span>Georgia Tech</span>
+            </div>
+            <div class="col-xs-4 right-col">
+                <span>August 2014 - June 2017</span>
+            </div>
+        </div>
+
+        <div class="row education-entry">
+            <div class="col-xs-12">
+                <ul class="detail-text">
+                    <li>Specialization in machine learning and data processing</li>
+                    <li>Project: <a href="https://github.com/cwmoo740/gtthreads">GTThreads</a>,
+                        a user-level thread library written in C for Advanced Operating Systems. Features pre-emptive
+                        context switching and a round-robin queue scheduler.
+                    </li>
+                    <li>Project: <a href="https://github.com/cwmoo740/raven4">PyRaven</a>,
+                        a solver for visual IQ tests for Knowledge Based Artificial Intelligence. Uses Python OpenCV
+                        to perform image processing on a series of frames to complete the pattern.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row education-header">
+            <div class="col-xs-4 left-col">
+                <span>BS in Mechanical Engineering</span>
+            </div>
+            <div class="col-xs-4 center-col">
+                <span>UC Berkeley</span>
+            </div>
+            <div class="col-xs-4 right-col">
+                <span>2009-2012</span>
+            </div>
+        </div>
+
+        <div class="row education-entry">
+            <div class="col-xs-12">
+                <ul class="detail-text">
+                    <li>
+                        Focus on mechatronics, embedded sensors, and data processing
+                    </li>
+                    <li>
+                        Senior Project: programmed the sensor setup and Arduino controller
+                        in a test of an alternative knee joint design for the Berkeley
+                        <a href="http://bleex.me.berkeley.edu/research/exoskeleton/medical-exoskeleton/">Austin
+                            Project</a>,
+                        a low-cost exoskeleton
+                    </li>
+                    <li>
+                        UC Berkeley Mechanical Engineering Drake scholarship recipient
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills-container">
+        <div class="row" id="skills-top-header">
+            <div class="col-xs-12 section-header">
+                SKILLS AND EXPERIENCE
+            </div>
+        </div>
+
+        <div class="row skills-header">
+            <div class="col-xs-12 left-col">
+                Languages and Frameworks<span class="detail-text">: C/C++, CUDA, OpenMP, Python, Javascript, Angular, JQuery, HTML, JSON, CSS3, XML/XSD </span><br>
+                Tools<span
+                    class="detail-text">: Git, SVN, Eclipse, Visual Studio, Linux administration, Bash scripting</span>
+            </div>
+        </div>
+
+        <div class="row" id="projects-top-header">
+            <div class="col-xs-12 section-header">
+                PROJECTS
+            </div>
+        </div>
+        <div class="row skills-header">
+            <div class="col-xs-12 left-col">
+
+                <a href="https://cwmoo740.github.io/multitwitch/">MultiTwitch</a><span class="detail-text">:
+                    an Angular web app to watch twitch.tv streams with a minimalist interface.</span>
+            </div>
+        </div>
+        <div class="row skills-header">
+            <div class="col-xs-12 left-col">
+                <a href="https://github.com/cwmoo740/graph500">Graph500</a><span class="detail-text">:
+    a high performance parallel graph traversal benchmark rewritten in C++</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
 </html>

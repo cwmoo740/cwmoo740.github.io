@@ -1,28 +1,42 @@
-.toplist {
-    list-style:none;
-    font-size:1.25em;
+#top-header {
+    margin-top: 20px;
 }
 
-.sublist {
-    list-style:disc;
-    font-size: 0.8em;
-    font-style:italic;
+#top-header .center-col {
+    font-size: 28px;
 }
 
-html {
-    height:100%;
+.left-col {
+    text-align: left;
 }
 
-body {
-    background-color:#939393;
-    height:100%;
-    min-height:100%;
+.center-col {
+    text-align: center;
 }
 
-#page-container {
-    background-color:#f1f1f1;
-    min-height:100%;
-    overflow-y:visible;
-    margin-bottom:0px;
-    padding-bottom:0px;
+.right-col {
+    text-align: right;
+}
+
+.section-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.employment-header, .education-header, .skills-header {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.detail-text {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+ul.detail-text {
+    padding-left: 15px;
 }
