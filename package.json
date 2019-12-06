@@ -6,7 +6,8 @@
     "dev": "sapper dev",
     "build": "sapper build",
     "export": "sapper export",
-    "start": "node __sapper__/build"
+    "start": "node __sapper__/build",
+    "deploy": "git subtree push --prefix __sapper__/export origin master"
   },
   "dependencies": {
     "compression": "^1.7.1",
