@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    font-size: 16px;
+}
+
+#sapper {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1fr;
+    grid-template-areas: "header" "main";
+}
+
+:root {
+    --color-theme-0: #bed7d1;
+    --color-theme-1: #f7ebc3;
+    --color-theme-2: #fbd6c6;
+    --color-theme-3: #f8e1e7;
+    --color-theme-4: #f8d1e0;
+
+    --color-background-dark: #111;
+    --color-text-light: #ddd;
+
+    --color-link-light: #7fdbff;
+    --color-link-dark: #b10dc9;
+
+    --width-phone: 480px;
+    --width-tablet: 736px;
+    --width-laptop: 980px;
+    --width-desktop: 1280px;
+    --width-ultrawide: 1690px;
+}
+
+a {
+    color: var(--color-link-light);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--color-link-dark);
+}
+
+article p {
+    line-height: 1.5;
+}
