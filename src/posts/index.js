@@ -5,6 +5,6 @@ const posts = [
     dark,
     google,
 ]
-    .sort((a, b) => b.date - a.date);
+    .sort((a, b) => a.date - b.date);
 
 export default posts;

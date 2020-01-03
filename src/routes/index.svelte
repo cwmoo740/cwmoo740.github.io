@@ -54,6 +54,7 @@
 </style>
 <script>
     import * as google_post from '../posts/google-irrelevance';
+    import * as dark_post from '../posts/his-dark-materials';
 </script>
 
 <svelte:head>
@@ -160,6 +161,9 @@
     <section class='posts'>
         <h1>Featured Posts</h1>
         <ul>
+            <li>
+                <a href='blog/{dark_post.slug}'>{dark_post.title}</a>
+            </li>
             <li>
                 <a href='blog/{google_post.slug}'>{google_post.title}</a>
             </li>
