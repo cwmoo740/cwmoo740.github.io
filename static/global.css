@@ -3,13 +3,26 @@ html, body {
     font-size: 16px;
 }
 
+@media print {
+    #sapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "main";
+    }
+}
+
+@media screen {
+    #sapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3rem 1fr;
+        grid-template-areas: "header" "main";
+    }
+}
+
 #sapper {
     display: grid;
     height: 100vh;
     width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3rem 1fr;
-    grid-template-areas: "header" "main";
 }
 
 :root {
@@ -21,6 +34,8 @@ html, body {
 
     --color-background-dark: #111;
     --color-text-light: #ddd;
+    --color-background-light: #fff;
+    --color-text-dark: #111;
 
     --color-link-light: #7fdbff;
     --color-link-dark: #b10dc9;
@@ -36,6 +51,7 @@ a {
     color: var(--color-link-light);
     text-decoration: none;
 }
+
 a:visited {
     color: var(--color-link-dark);
 }

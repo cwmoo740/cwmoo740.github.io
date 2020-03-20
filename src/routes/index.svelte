@@ -1,19 +1,73 @@
 <style>
-    article {
-        color: #000;
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-        grid-template-areas: "hero" "work" "education" "posts";
-        height: 100%;
+    @media print {
+        article {
+            grid-template-rows: auto 1fr;
+            grid-template-columns: 3fr 2fr;
+            grid-template-areas: "hero hero" "work education";
+        }
+
+        section {
+            padding: 1rem;
+        }
+
+        .posts {
+            display: none;
+        }
+
+        h1, h2, h3, h4, h5 {
+            margin: 0.5rem 0;
+        }
+
+        ul {
+            margin: 0.5rem 0;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
     }
 
-    @media (min-width: 1080px) {
+    @media screen {
+        article {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: "hero" "work" "education" "posts";
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .hero {
+            background-color: var(--color-theme-1);
+        }
+
+        .work {
+            background-color: var(--color-theme-2);
+        }
+
+        .education {
+            background-color: var(--color-theme-3);
+        }
+
+        .posts {
+            background-color: var(--color-theme-4);
+        }
+    }
+
+
+    @media screen and (min-width: 1080px) {
         article {
             grid-template-rows: auto 1fr;
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "hero hero hero" "work education posts";
         }
+    }
+
+    article {
+        color: #000;
+        display: grid;
+        height: 100%;
     }
 
     p {
@@ -24,12 +78,7 @@
         margin-top: 0;
     }
 
-    section {
-        padding: 4rem;
-    }
-
     .hero {
-        background-color: var(--color-theme-1);
         grid-area: hero;
         display: flex;
         flex-flow: column nowrap;
@@ -38,17 +87,14 @@
     }
 
     .work {
-        background-color: var(--color-theme-2);
         grid-area: work;
     }
 
     .education {
-        background-color: var(--color-theme-3);
         grid-area: education;
     }
 
     .posts {
-        background-color: var(--color-theme-4);
         grid-area: posts;
     }
 </style>
@@ -63,9 +109,20 @@
 
 <article>
     <section class='hero'>
-        <h1>Jeffrey Young</h1>
-        <p>NYC full stack programmer with a master's degree in ML.</p>
-        <p>Animal lover, outdoor enthusiast. Currently trying to save the world in any way possible.</p>
+        <div style='display: flex; justify-content: space-between; width: 100%;'>
+            <div>
+                <h1>Jeffrey Young</h1>
+                <p>Master's in CS from Georgia Tech, specializing in machine learning. Animal lover, outdoor
+                    enthusiast. </p>
+                <p>Trying to use software to make the world a better place.</p>
+            </div>
+            <div style='margin-left: 40px;'>
+                <address style='display: flex; flex-flow: column; text-align: right;'>
+                    <a href='https://cowmoo.online'>cowmoo.online</a>
+                    <a href='https://www.linkedin.com/in/cwmoo740/'>linkedin.com/in/cwmoo740</a>
+                </address>
+            </div>
+        </div>
     </section>
 
     <section class='work'>
@@ -105,7 +162,7 @@
             <h5>Software Engineer <span>02/2015 - 07/2015</span></h5>
             <p>Reduced memory consumption and startup time of a large C++ application</p>
         </div>
-        <div>
+        <div class='page-break'>
             <h3>Photonic</h3>
             <h5>Software Engineer <span>07/2013 - 05/2014</span></h5>
             <p>
@@ -156,8 +213,36 @@
                 </li>
             </ul>
         </div>
+        <h1>Hobbies and Skills</h1>
+        <div>
+            <h3>Programming</h3>
+            <ul>
+                <li>Rust! I've been practicing with <a href='https://github.com/cwmoo740/aoc_2019'>advent of code
+                    2019.</a></li>
+                <li>Python. The reliable workhorse of languages. I turn to python when prototyping or practicing
+                    algorithms.
+                </li>
+                <li>Javascript (Typescript). I'm a big fan of Anders_Hejlsberg and write as much as possible in
+                    typescript.
+                </li>
+                <li>Pandas + Pytorch are my go to tools for data analysis and ML work. Still looking for more experience
+                    here outside of schoolwork and kaggle.
+                </li>
+            </ul>
+            <h3 class='page-break'>For Fun</h3>
+            <ul>
+                <li>
+                    I spend a large portion of my free time hiking, jogging, and playing with my dog. Dog friendly
+                    offices are a plus!
+                </li>
+                <li>Skilled amateur in dota2, halo3, and chess. Former California state high school chess champion.</li>
+                <li>
+                    I enjoy reading nonfiction and political commentary. NYT, The Atlantic, and the New Yorker are my
+                    favorites.
+                </li>
+            </ul>
+        </div>
     </section>
-
     <section class='posts'>
         <h1>Featured Posts</h1>
         <ul>

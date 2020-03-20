@@ -5,11 +5,21 @@
 </script>
 
 <style>
+	@media screen {
+		main {
+			background-color: var(--color-background-dark);
+			color: var(--color-text-light);
+		}
+	}
+    @media print {
+		main {
+			background-color: var(--color-background-light);
+			color: var(--color-text-dark);
+		}
+	}
 	main {
-	    background-color: var(--color-background-dark);
-	    color: var(--color-text-light);
-        grid-area: main;
-        height: 100%;
+		grid-area: main;
+		height: 100%;
 	}
 </style>
 
