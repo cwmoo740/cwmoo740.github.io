@@ -28,6 +28,11 @@
         margin: 0 auto;
         max-width: 1080px;
     }
+    article :global(section + section) {
+        border-top: 1px solid red;
+        padding-top: 1rem;
+        margin-top: 2rem;
+    }
 </style>
 
 <svelte:head>
