@@ -101,6 +101,8 @@
 <script>
     import * as google_post from '../posts/google-irrelevance';
     import * as dark_post from '../posts/his-dark-materials';
+    import * as law_and_order from '../posts/law-and-order';
+    import * as coronavirus_climate from '../posts/coronavirus-climate-change';
 </script>
 
 <svelte:head>
@@ -246,6 +248,13 @@
     <section class='posts'>
         <h1>Featured Posts</h1>
         <ul>
+
+            <li>
+                <a href='blog/{law_and_order.slug}'>{law_and_order.title}</a>
+            </li>
+            <li>
+                <a href='blog/{coronavirus_climate.slug}'>{coronavirus_climate.title}</a>
+            </li>
             <li>
                 <a href='blog/{dark_post.slug}'>{dark_post.title}</a>
             </li>
