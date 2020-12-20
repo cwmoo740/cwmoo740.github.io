@@ -103,6 +103,7 @@
     import * as dark_post from '../posts/his-dark-materials';
     import * as law_and_order from '../posts/law-and-order';
     import * as coronavirus_climate from '../posts/coronavirus-climate-change';
+    import * as the_numbers from '../posts/the-numbers';
 </script>
 
 <svelte:head>
@@ -248,7 +249,9 @@
     <section class='posts'>
         <h1>Featured Posts</h1>
         <ul>
-
+            <li>
+                <a href='blog/{the_numbers.slug}'>{the_numbers.title}</a>
+            </li>
             <li>
                 <a href='blog/{law_and_order.slug}'>{law_and_order.title}</a>
             </li>
